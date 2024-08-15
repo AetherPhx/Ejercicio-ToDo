@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio Simple: To-Do List App</title>
+	</head>
+	<body>
+		<div class="layout">
+			<h1>Todo List App</h1>
+			<form class="register" action="">
+				<h2 class="register__title">Registra una nueva tarea</h2>
+
+				<input
+					class="register__input"
+					type="text"
+					id="name"
+					name="name"
+					placeholder="Nombre"
+				/>
+
+				<input class="register__input" type="date" id="date" name="date" />
+
+				<textarea
+					class="register__input"
+					id="task"
+					name="task"
+					placeholder="Tarea"
+				></textarea>
+
+				<button class="register__button" type="submit">Registrar</button>
+			</form>
+
+			<section class="todo">
+				<h2 class="todo__title">Listado de Tareas</h2>
+				<span class="todo__empty">No hay tareas</span>
+				<ul class="todo__list"></ul>
+			</section>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
